@@ -10,4 +10,4 @@ class CsvImporter(Importer):
                 reader = csv.DictReader(file)
                 return [row for row in reader]
         else:
-            raise TypeError("Invalid Format")
+            raise ValueError("Arquivo inválido")

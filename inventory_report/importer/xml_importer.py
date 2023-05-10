@@ -14,3 +14,5 @@ class XmlImporter(Importer):
                     d[x.tag] = x.text
                 data.append(d)
             return data
+        else:
+            raise ValueError("Arquivo inválido")
